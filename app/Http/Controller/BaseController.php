@@ -10,7 +10,7 @@ declare(strict_types=1);
  * @license  https://github.com/swoft-cloud/swoft/blob/master/LICENSE
  */
 
-namespace App\Controllers;
+namespace App\Http\Controller;
 
 class BaseController
 {
