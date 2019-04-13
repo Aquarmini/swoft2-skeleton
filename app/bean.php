@@ -10,4 +10,10 @@ declare(strict_types=1);
  * @license  https://github.com/swoft-cloud/swoft/blob/master/LICENSE
  */
 
-return [];
+return [
+    'db' => [
+        'dsn' => env('DB_DSN', 'mysql:dbname=test;host=localhost'),
+        'username' => env('DB_USERNAME', 'root'),
+        'password' => env('DB_PASSWORD', null),
+    ],
+];
