@@ -18,7 +18,7 @@ use Swoft\Bean\Annotation\Mapping\Inject;
 abstract class BaseController
 {
     /**
-     * @Inject()
+     * @Inject
      * @var Response
      */
     protected $response;
