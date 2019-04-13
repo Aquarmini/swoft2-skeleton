@@ -12,7 +12,14 @@ declare(strict_types=1);
 
 namespace App\Http\Controller;
 
-class BaseController
+use App\Core\Http\Response;
+use Swoft\Bean\Annotation\Mapping\Inject;
+
+abstract class BaseController
 {
+    /**
+     * @Inject()
+     * @var Response
+     */
     protected $response;
 }
