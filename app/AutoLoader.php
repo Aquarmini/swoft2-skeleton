@@ -12,12 +12,12 @@ declare(strict_types=1);
 
 namespace App;
 
-use Swoft\Annotation\LoaderInterface;
+use Swoft\SwoftComponent;
 
 /**
  * Class AutoLoader.
  */
-class AutoLoader implements LoaderInterface
+class AutoLoader extends SwoftComponent
 {
     /**
      * Get namespace and dirs.
@@ -29,5 +29,18 @@ class AutoLoader implements LoaderInterface
         return [
             __NAMESPACE__ => __DIR__,
         ];
+    }
+
+    /**
+     * @return array
+     */
+    public function metadata(): array
+    {
+        return [];
+    }
+
+    public function coreBean(): array
+    {
+        return [];
     }
 }
