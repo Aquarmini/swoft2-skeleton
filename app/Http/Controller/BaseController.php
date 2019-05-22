@@ -12,7 +12,7 @@ declare(strict_types=1);
 
 namespace App\Http\Controller;
 
-use App\Core\Http\Response;
+use App\Kernel\Http\Response;
 use Swoft\Bean\Annotation\Mapping\Inject;
 
 abstract class BaseController

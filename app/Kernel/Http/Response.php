@@ -10,7 +10,7 @@ declare(strict_types=1);
  * @license  https://github.com/swoft-cloud/swoft/blob/master/LICENSE
  */
 
-namespace App\Core\Http;
+namespace App\Kernel\Http;
 
 use Swoft\Bean\Annotation\Mapping\Bean;
 
