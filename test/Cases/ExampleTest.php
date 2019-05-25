@@ -10,6 +10,18 @@ declare(strict_types=1);
  * @license  https://github.com/swoft-cloud/swoft/blob/master/LICENSE
  */
 
-return [
-    'name' => 'swoft framework 2.0',
-];
+namespace SwoftTest\Cases;
+
+use SwoftTest\HttpTestCase;
+
+/**
+ * @internal
+ * @coversNothing
+ */
+class ExampleTest extends HttpTestCase
+{
+    public function testExample()
+    {
+        $this->assertTrue(true);
+    }
+}
