@@ -25,6 +25,6 @@ class IndexController extends BaseController
      */
     public function index()
     {
-        return $this->response->success('Hello Swoft 2.0.');
+        return $this->response->success('Hello Swoft 2.0');
     }
 }
