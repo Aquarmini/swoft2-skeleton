@@ -23,5 +23,10 @@ class ExampleTest extends HttpTestCase
     public function testExample()
     {
         $this->assertTrue(true);
+
+        $res = $this->get('/index');
+
+        $this->assertSame(0, $res['code']);
+        $this->assertSame('Hello Swoft 2.0', $res['data']);
     }
 }
