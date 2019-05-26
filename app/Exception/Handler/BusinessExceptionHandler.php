@@ -35,6 +35,11 @@ class BusinessExceptionHandler extends AbstractHttpErrorHandler
     protected $response;
 
     /**
+     * @Inject("logger")
+     */
+    protected $logger;
+
+    /**
      * @param Throwable $e
      * @param Response $response
      *
@@ -51,8 +56,9 @@ class BusinessExceptionHandler extends AbstractHttpErrorHandler
             return $this->response->fail($code, $message);
         }
 
-        // Debug is false
-        if (! APP_DEBUG) {
+        $this->logger->error(format_throwable($exception));
+
+        if (!APP_DEBUG) {
             return $this->response->fail(500, '服务器内部错误');
         }
 

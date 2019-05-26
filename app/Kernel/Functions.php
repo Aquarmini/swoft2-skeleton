@@ -10,7 +10,7 @@ declare(strict_types=1);
  * @license  https://github.com/swoft-cloud/swoft/blob/master/LICENSE
  */
 
-if (! function_exists('format_throwable')) {
+if (!function_exists('format_throwable')) {
     /**
      * Format a throwable to string.
      * @param Throwable $throwable
