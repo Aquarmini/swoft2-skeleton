@@ -12,7 +12,7 @@ declare(strict_types=1);
 
 namespace App\Http\Controller;
 
-use App\Models\User;
+use App\Model\User;
 use Swoft\Http\Server\Annotation\Mapping\Controller;
 use Swoft\Http\Server\Annotation\Mapping\RequestMapping;
 
