@@ -10,10 +10,10 @@ declare(strict_types=1);
  * @license  https://github.com/swoft-cloud/swoft/blob/master/LICENSE
  */
 
-namespace App\Models;
+namespace App\Exception;
 
-use Swoft\Db\Eloquent\Model as SwoftModel;
+use Exception;
 
-class Model extends SwoftModel
+class BusinessException extends Exception
 {
 }
