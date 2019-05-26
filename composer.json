@@ -47,7 +47,10 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/"
-        }
+        },
+        "files": [
+            "app/Kernel/Functions.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
@@ -67,10 +70,6 @@
         "phpstan": "phpstan analyse app --memory-limit 300M -l 0 -c phpstan.neon"
     },
     "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/swoft-cloud/swoft-component.git"
-        },
         {
             "type": "composer",
             "url": "https://packagist.laravel-china.org"
