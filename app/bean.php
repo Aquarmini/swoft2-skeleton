@@ -17,6 +17,11 @@ use Swoft\Server\Swoole\SwooleEvent;
 use Swoft\Task\Swoole\FinishListener;
 
 return [
+    'logger' => [
+        'flushRequest' => true,
+        'enable' => true,
+        'json' => false,
+    ],
     'httpServer' => [
         'class' => HttpServer::class,
         'port' => 9501,
