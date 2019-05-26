@@ -53,7 +53,7 @@ return [
     'redis' => [
         'class' => RedisDb::class,
         'host' => env('REDIS_HOST', '127.0.0.1'),
-        'auth' => env('REDIS_AUTH', null),
+        'password' => env('REDIS_AUTH', null),
         'port' => (int) env('REDIS_PORT', 6379),
         'database' => (int) env('REDIS_DB', 0),
     ],
